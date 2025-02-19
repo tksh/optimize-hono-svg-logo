@@ -4,6 +4,9 @@ I tried reducing the SVG file size just for fun!
 
 Source: <https://github.com/honojs/website/issues/574>
 
+Results:
+![Results](diagram/results_trimmed.png)
+
 ## 1st Challenge
 
 Use the same grid size as the original to achieve faithful results.
