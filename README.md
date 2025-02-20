@@ -6,7 +6,7 @@ Source: <https://github.com/honojs/website/issues/574>
 
 Results:
 
-![Results](diagram/results_trimmed.png)
+![Results](diagram/results.svg)
 
 ## 1st Challenge
 
