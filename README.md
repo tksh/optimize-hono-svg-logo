@@ -16,7 +16,7 @@ Use the same grid size as the original to achieve faithful results.
 
    Import the original artwork and trace it using the pen tool in [Affinity Designer 2](https://affinity.serif.com/designer/).
 
-   - Use fewer nodes for shaping: reduce from **14** (outer=5, inner=9) to **9** (outer=5, inner=4).
+   - Use fewer points for shaping: reduce from **45** to **25**.
    - **Result:** 1329 bytes
 
 2. **Manual Tweaking**
@@ -75,7 +75,7 @@ Find a two-digit width and height pair that approximates the original ratio as c
 
    Import the original artwork and trace it using the pen tool in [Affinity Designer 2](https://affinity.serif.com/designer/).
 
-   - Use fewer nodes for shaping: reduce from **9** (outer=5, inner=4) to **7** (outer=5, inner=2).
+   - Use fewer points for shaping: reduce from **25** to **21**.
    - **Result:** 1257 bytes
 
 2. **Manual Tweaking**
@@ -118,21 +118,41 @@ Find a two-digit width and height pair that approximates the original ratio as c
 ### Final Images
 
 - **Original (1740 bytes):**
+
   ![Original by qrg](logo_viewbox772x996_by_qrg.svg)
 
 - **1st Challenge (507 bytes):**
+
   ![1st challenge](logo_viewbox772x996_02_svgo_optimized.svg)
 
 - **2nd Challenge (418 bytes):**
+
   ![2nd challenge](logo_viewbox76x98_02_svgo_optimized.svg)
+
+### Path details
+
+- **Original (Anchor points: 15, Control points: 30):**
+
+  ![0.png](points/points_0.png)
+
+- **1st Challenge (Anchor points: 10, Control points: 15):**
+
+  ![1.png](points/points_1.png)
+
+- **2nd Challenge (Anchor points: 8, Control points: 13):**
+
+  ![2.png](points/points_2.png)
 
 ### Shape Differences
 
 - **Difference between Original and 1st Challenge:**
+
   ![diff_0_1.png](diff/diff_0_1.png)
 
 - **Difference between 1st and 2nd Challenge:**
+
   ![diff_1_2.png](diff/diff_1_2.png)
 
 - **Difference between Original and 2nd Challenge:**
+
   ![diff_0_2.png](diff/diff_0_2.png)
