@@ -1,0 +1,82 @@
+vars: {
+    original: "" {
+      label: Original by @qrg:\n\n- viewBox: 772 x 996\n- Color: rgb via style\n- Path points: 45\n- Coords type: Float
+      label.near: outside-bottom-center
+      shape: image
+      icon: https://raw.githubusercontent.com/tksh/optimize-hono-svg-logo/refs/heads/main/logo_viewbox772x996_by_qrg.svg
+      width: 330
+      height: 330
+  }
+    2nd: "" {
+      label: Optimized:\n\n- viewBox: 76 x 98\n- Color: 3-digits hex\n- Path points: 21\n- Coords type: Integer
+      label.near: outside-bottom-center
+      shape: image
+      icon: https://raw.githubusercontent.com/tksh/optimize-hono-svg-logo/refs/heads/main//logo_viewbox76x98_02_svgo_optimized.svg
+      width: 330
+      height: 330
+  }
+}
+
+Original logo: ${original}
+2nd: ${2nd}
+
+direction: right
+Original logo -> 2nd: 1740 → 418 bytes {
+    style: {
+        font-size: 20
+        font-color: black
+    }
+}
+
+
+vars: {
+    original_points: {
+        label: - Anchor points: 15\n- Control points: 30
+        shape: image
+        icon: https://raw.githubusercontent.com/tksh/optimize-hono-svg-logo/refs/heads/main/points/points_0.png
+        width: 300
+        height: 300
+    }
+    2nd_points: {
+        label: - Anchor points: 8\n- Control points: 13
+        shape: image
+        icon: https://raw.githubusercontent.com/tksh/optimize-hono-svg-logo/refs/heads/main/points/points_2.png
+        width: 300
+        height: 300
+    }
+}
+
+Paths {
+    Original paths: ${original_points}
+    2nd paths: ${2nd_points}
+
+    Original paths -> 2nd paths
+}
+Paths.style.fill: transparent
+Paths.style.stroke: lightgrey
+
+
+Colors {
+    vars: {
+        OriginalOuter: \#FF884A \n to \n \#FF3000
+        OriginalInner: \#FF9758
+        2ndOuter: \#F84 \n to \n \#F30
+        2ndInner: \#F95
+    }
+
+    Original outer: ${OriginalOuter}
+    Original inner: ${OriginalInner}
+    2nd outer: ${2ndOuter}
+    2nd inner: ${2ndInner}
+
+    Original outer -> 2nd outer
+    Original inner -> 2nd inner
+
+    Original outer.style.fill: "linear-gradient(#FF884A, #FF3000)"
+    Original inner.style.fill: "#FF9758"
+    2nd outer.style.fill: "linear-gradient(#F84, #F30)"
+    2nd inner.style.fill: "#F95"
+
+}
+Colors.style.fill: transparent
+Colors.style.stroke: lightgrey
