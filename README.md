@@ -1,5 +1,7 @@
 # Optimizing the Hono SVG Logo
 
+🎉 **Update**: The optimization from the [2nd Challenge](#2nd-challenge) has been merged into the official repository via <https://github.com/honojs/website/pull/602>
+
 I tried reducing the SVG file size just for fun!
 
 Source: <https://github.com/honojs/website/issues/574>
